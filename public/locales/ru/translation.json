@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "main": "Главная",
+    "about": "О сайте"
+  },
+  "languageSwitcher": {
+    "normal": "Русский",
+    "short": "Ru"
+  }
+}

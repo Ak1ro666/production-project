@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "main": "Main",
+    "about": "About"
+  },
+  "languageSwitcher": {
+    "normal": "English",
+    "short": "En"
+  }
+}
