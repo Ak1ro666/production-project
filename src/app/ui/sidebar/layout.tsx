@@ -14,11 +14,16 @@ export function Layout() {
 
   return (
     <aside
+      data-testid="sidebar"
       className={cn(styles.sidebar, {
         [styles.collapsed]: collapsed,
       })}
     >
-      <UiButton className={styles.button} onClick={toggle}>
+      <UiButton
+        data-testid="sidebar-toggle"
+        className={styles.button}
+        onClick={toggle}
+      >
         Toggle
       </UiButton>
       <div className={styles.switchers}>

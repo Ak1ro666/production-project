@@ -6,5 +6,8 @@
   "languageSwitcher": {
     "normal": "Русский",
     "short": "Ru"
-  }
+  },
+  "notFoundPage": "Страница не найдена",
+  "errorOccurred": "Произошла ошибка",
+  "reloadPage": "Перезагрузить страницу"
 }

@@ -1,1 +1,3 @@
-export default "./classNames.ts";
+import cn from "./classNames";
+
+export default cn;

@@ -6,5 +6,8 @@
   "languageSwitcher": {
     "normal": "English",
     "short": "En"
-  }
+  },
+  "notFoundPage": "Not found page",
+  "errorOccurred": "Error occurred",
+  "reloadPage": "Reload page"
 }

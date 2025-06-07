@@ -4,6 +4,7 @@ import { AboutPage } from "@/pages/about";
 import { MainPage } from "@/pages/main";
 
 import { ROUTES } from "@/shared/model/routes";
+import { NotFoundPage } from "@/pages/not-found";
 
 export const routeConfig: Record<keyof typeof ROUTES, RouteProps> = {
   MAIN: {
@@ -14,5 +15,9 @@ export const routeConfig: Record<keyof typeof ROUTES, RouteProps> = {
   ABOUT: {
     path: ROUTES.ABOUT,
     element: <AboutPage />,
+  },
+  NOT_FOUND: {
+    path: ROUTES.NOT_FOUND,
+    element: <NotFoundPage />,
   },
 };

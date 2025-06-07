@@ -46,6 +46,10 @@ module.exports = {
     "default-case": "off",
     "react/jsx-no-constructed-context-values": "off",
     "react/button-has-type": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/destructuring-assignment": "off",
+    "no-restricted-globals": "off",
+    "object-curly-newline": "off",
   },
   globals: {
     __IS_DEV__: true,

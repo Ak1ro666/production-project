@@ -8,7 +8,7 @@ export function Layout({ isCollapsed }: { isCollapsed?: boolean }) {
   return (
     <UiButton theme="inverted-primary" onClick={translate.toggle}>
       {translate.t(
-        isCollapsed ? "languageSwitcher.short" : "languageSwitcher.normal",
+        isCollapsed ? "languageSwitcher.short" : "languageSwitcher.normal"
       )}
     </UiButton>
   );
