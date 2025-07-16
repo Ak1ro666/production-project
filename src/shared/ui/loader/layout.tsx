@@ -4,7 +4,7 @@ import cn from "@/shared/lib/utils/classNames";
 
 export function Layout({ className }: { className?: string }) {
   return (
-    <div className={cn(styles["lds-ellipsis"], {}, [className])}>
+    <div data-testid="loader" className={cn(styles["lds-ellipsis"], {}, [className])}>
       <div />
       <div />
       <div />

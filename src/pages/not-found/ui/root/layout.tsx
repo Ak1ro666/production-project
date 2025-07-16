@@ -1,13 +1,11 @@
-import { useTranslation } from "react-i18next";
+import { ReactNode } from "react";
 
 import styles from "./styles.module.scss";
 
-export function Layout() {
-  const { t } = useTranslation();
-
+export function Layout({ title }: { title: ReactNode }) {
   return (
     <div className={styles.root}>
-      <h1>{t("notFoundPage")}</h1>
+      <h1>{title}</h1>
     </div>
   );
 }

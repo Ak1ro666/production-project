@@ -1,1 +1,1 @@
-export { PageAsync as MainPage } from "./page.async";
+export { MainPage } from "./facade/page";

@@ -10,7 +10,7 @@ export function Layout() {
   };
 
   return (
-    <div className={styles.content}>
+    <div data-testid="page-error" className={styles.content}>
       <h1>{t("errorOccurred")}</h1>
       <button onClick={reload}>{t("reloadPage")}</button>
     </div>

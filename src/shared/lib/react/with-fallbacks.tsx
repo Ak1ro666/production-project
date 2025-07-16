@@ -1,36 +1,20 @@
 import { ComponentType, Ref, Suspense } from "react";
+
+import { UiLoader } from "@/shared/ui/loader";
 // import { ErrorBoundary } from "./error-boundary";
 
 // TODO: add component Loader
-
-function Loader() {
-  return (
-    <div
-      style={{
-        minHeight: "100vh",
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        fontSize: "32px",
-        fontWeight: "bold",
-      }}
-    >
-      Loading...
-    </div>
-  );
-}
 
 export function WithFallbacks<
   P extends {
     ref?: Ref<HTMLElement>;
     className?: string;
-  },
+  }
 >(Component: ComponentType<P>): ComponentType<P> {
   return function EnhancedComponent(props: P) {
     return (
       // <ErrorBoundary>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={<UiLoader />}>
         <Component {...props} />
       </Suspense>
       // </ErrorBoundary>

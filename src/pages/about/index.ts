@@ -1,1 +1,1 @@
-export { PageAsync as AboutPage } from "./page.async";
+export { AboutPage } from "./facade/page";

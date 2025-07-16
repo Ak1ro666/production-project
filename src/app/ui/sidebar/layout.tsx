@@ -1,10 +1,11 @@
+/* eslint-disable i18next/no-literal-string */
 import { UiButton } from "@/shared/ui/button";
 import cn from "@/shared/lib/utils/classNames/classNames";
 
 import { useCollapsed } from "./view-model/use-collapsed";
 
 import { LangSwitcher } from "../language-switcher";
-import { useTheme } from "../../providers/theme";
+import { useTheme } from "../../model/theme";
 
 import styles from "./styles.module.scss";
 

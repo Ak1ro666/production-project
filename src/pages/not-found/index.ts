@@ -1,1 +1,1 @@
-export { Page as NotFoundPage } from "./facade/page";
+export { NotFoundPage } from "./facade/page";

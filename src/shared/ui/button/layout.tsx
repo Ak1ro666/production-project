@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from "react";
 
-import cn from "@/shared/lib/utils/classNames/classNames";
+import cn from "@/shared/lib/utils/classNames";
 
 import styles from "./styles.module.scss";
 
@@ -10,12 +10,14 @@ const LayoutTheme = {
   inverted_primary: "inverted-primary",
   inverted_secondary: "inverted-secondary",
   clear: "clear",
+  outline: "outline",
 } as const;
 
-type LayoutTheme = (typeof LayoutTheme)[keyof typeof LayoutTheme];
+type LayoutTheme = typeof LayoutTheme[keyof typeof LayoutTheme];
 
 export function Layout({
   className,
+  children,
   theme = "primary",
   ...props
 }: ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -25,6 +27,8 @@ export function Layout({
     <button
       className={cn(styles.button, {}, [className, styles[theme]])}
       {...props}
-    />
+    >
+      {children}
+    </button>
   );
 }

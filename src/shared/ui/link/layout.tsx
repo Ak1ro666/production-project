@@ -10,19 +10,22 @@ const LayoutTheme = {
   inverted_secondary: "inverted-secondary",
 } as const;
 
-type LayoutTheme = (typeof LayoutTheme)[keyof typeof LayoutTheme];
+type LayoutTheme = typeof LayoutTheme[keyof typeof LayoutTheme];
 
 export function Layout({
   className,
   theme = "primary",
-  ...props
+  children,
+  ...otherProps
 }: LinkProps & {
   theme?: LayoutTheme;
 }) {
   return (
     <Link
       className={cn(styles.link, {}, [className, styles[theme]])}
-      {...props}
-    />
+      {...otherProps}
+    >
+      {children}
+    </Link>
   );
 }

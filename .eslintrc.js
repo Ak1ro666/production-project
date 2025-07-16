@@ -33,8 +33,13 @@ module.exports = {
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
     "no-underscore-dangle": "off",
-    // "i18next/no-literal-string": ["error", { markupOnly: true }],
-    "i18next/no-literal-string": "off",
+    "i18next/no-literal-string": [
+      "error",
+      {
+        markupOnly: true,
+        ignoreAttribute: ["theme", "data-testid", "to", "rel", "fallback"],
+      },
+    ],
     quotes: "off",
     "comma-dangle": "off",
     "consistent-return": "off",
@@ -50,7 +55,18 @@ module.exports = {
     "react/destructuring-assignment": "off",
     "no-restricted-globals": "off",
     "object-curly-newline": "off",
+    indent: "off",
+    "no-dupe-keys": "off",
+    "operator-linebreak": "off",
   },
+  overrides: [
+    {
+      rules: {
+        files: ["**/src/**/*.{test,spec}.{ts,tsx}"],
+        "i18next/no-literal-string": "off",
+      },
+    },
+  ],
   globals: {
     __IS_DEV__: true,
   },

@@ -9,6 +9,9 @@
     "rule-empty-line-before": null,
     "number-max-precision": null,
     "no-duplicate-selectors": null,
-    "at-rule-empty-line-before": null
+    "at-rule-empty-line-before": null,
+    "indentation": null,
+    "selector-pseudo-class-parentheses-space-inside": null,
+    "unit-no-unknown": null
   }
 }
